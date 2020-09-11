@@ -4,23 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="C:\Users\aser\Desktop\Daniel files\dwd class\css\font-awesome.min.css" rel="stylesheet" type="text/css" />
     <title>Random Password Generator</title>
 </head>
 <body>
-    <h1 id="heading">RANDOM PASSWORD GENERATOR</h1>
-    <br>
-    <div id="container">
-        <input type="text" placeholder="Create Password" readonly id="input"><br><br>
-        <button id="button">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            Generate Password
-        </button>
-    </div>
-    <div id="footer">
-        <p>&copy; Copyright 2020 by DeeStarks Inc. All Rights Reserved.</p>
+    <div id="main">
+        <div id="container">
+            <h1>Password Generator</h1>
+            <hr>
+            <div id="result-container">
+                <div id="result"></div>
+                <button id="clipboard"><i class="fa fa-clipboard"></i></button>
+            </div>
+            <div id="copied"></div>
+            <div id="settings">
+                <div id="setting">
+                    <label for="length">Password Length</label>
+                    <input type="number" id="length" min="4" max="20" value="15">
+                </div>
+                <div id="setting">
+                    <label for="uppercase">Include Uppercase Letters</label>
+                    <input type="checkbox" id="uppercase" checked>
+                </div>
+                <div id="setting">
+                    <label for="lowercase">Include Lowercase Letters</label>
+                    <input type="checkbox" id="lowercase" checked>
+                </div>
+                <div id="setting">
+                    <label for="numbers">Include Numbers</label>
+                    <input type="checkbox" id="numbers" checked>
+                </div>
+                <div id="setting">
+                    <label for="symbols">Include Symbols</label>
+                    <input type="checkbox" id="symbols" checked>
+                </div>
+                <button id="generate">
+                    Generate Password
+                </button>
+            </div>
+        </div>
+        <div id="footer">
+            All Rights Reserved
+            <br>
+            <em>Design by:</em> DeeStarks Inc.
+        </div>
     </div>
     <script src="main.js"></script>
 </body>

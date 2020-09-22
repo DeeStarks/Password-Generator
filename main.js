@@ -6,6 +6,7 @@ const numbers = document.getElementById('numbers');
 const symbols = document.getElementById('symbols');
 const generate = document.getElementById('generate');
 const clipboard = document.getElementById('clipboard');
+const test = "Just testing my commit"
 
 const randomFuncs = {
     lower: randomLower,
